@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+	<head><title>iSecurity CCGen</title>
+	<meta carset="UTF-8"/>
+	<meta content="width=device-width, initial-scale=1.0, user-scalable=no" name="viewport">
+	<base target="_blank">
+	<link rel="icon" href="https://bin.isecurity.pw/img/favicon.ico"/>
+	<link href="//fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+	<link href="//db.onlinewebfonts.com/c/3116cf7d5d85070c2c0d4b96bfee7d8d?family=GeosansLight" rel="stylesheet" type="text/css"/> 
+	<link rel="stylesheet" type="text/css" href="https://rawgit.com/jevotech/scripts/master/style.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="https://rawgit.com/jevotech/scripts/master/code.js"></script>
+	</head>
+<body onload="n1ght();">
+<div class="fluid-container">
+        <header><br />
+
+<section class="title"><a href="https://www.facebook.com/groups/cafet3ch/"><img src="https://bin.isecurity.pw/img/logo.png" alt="Icon"></a></section>
+
+<div class="hh-title">Credit Cards<br/>
+<i class="fa fa-cc-mastercard" aria-hidden="true"></i>
+ <i class="fa fa-cc-discover" aria-hidden="true"></i> 
+ <i class="fa fa-cc-visa" aria-hidden="true"></i> 
+ <i class="fa fa-cc-jcb" aria-hidden="true"></i> <i class="fa fa-cc-amex" aria-hidden="true"></i> 
+ <i class="fa fa-cc-diners-club" aria-hidden="true"></i>
+
+ </div></header><br />
+
+ <form name="console" id="console" class="form-horizontal" role="form" method="POST">	
+ <div class="p">
+ <div class="Ilabel">
+ <i class="fa fa-gg"></i> Insert the BIN </div><input type="text" class="input_text" id="ccpN" name="ccp" value="" style="width: 175px" placeholder="xxxx xxxx xxxx xxxx" maxlength="19" list="iin-predefined" required></div><br />
+
+ <select name="ccnsp" class="input_text" style="display:none;">
+ <option selected="selected">Nothing</option></select>
+
+ <div class="p">
+ <div class="Ilabel" style="height:46px;"><i class="fa fa-plus-square"></i> Optional </div>		
+ <div class="input_text s"><label>Date<input type="checkbox" id="ccexpdat" name="ccexpdat"></label><label>CCV2<input type="checkbox" id="ccvi" name="ccvi"></label><label>Bank Type<input type="checkbox" id="ccbank" name="ccbank"></label></div>
+
+ </div><br /><div class="p"><div class="Ilabel">
+ <i class="fa fa-shopping-bag" aria-hidden="true"></i> Number of CC</div><input class="input_text" type="number" name="ccghm" style="width: 50px" maxlength="4" value="10"></div>	
+
+ <div class="p"><div class="Ilabel"><i class="fa fa-cogs" aria-hidden="true"></i> Format</div>		
+ <select name="ccoudatfmt" style="height:38px;" class="input_text"><option value="CHECKER" selected="selected">CHECKER</option><option value="CSV">CSV</option><option value="XML">XML</option><option value="JSON">JSON</option></select></div><br />
+
+ <div class="p"><div class="Ilabel"><i class="fa fa-connectdevelop"></i> CCV2</div><input type="text" id="eccv" maxlength="4" style="width: 40px" value="rnd" class="input_text" name="eccv"></div>
+
+ <div class="p"><div class="Ilabel"><i class="fa fa-calendar" aria-hidden="true"></i> Month </div>	
+ <select style="height:38px;" name="emeses" class="input_text">
+ <option value="rnd">Rnd</option>
+ <option value="01">01</option>
+ <option value="02">02</option>
+ <option value="03">03</option>
+ <option value="04">04</option>
+ <option value="05">05</option>
+ <option value="06">06</option>
+ <option value="07">07</option>
+ <option value="08">08</option>
+ <option value="09">09</option>
+ <option value="10">10</option>
+ <option value="11">11</option>
+ <option value="12">12</option>
+ </select></div>
+
+ <div class="p"><div class="Ilabel"><i class="fa fa-calendar" aria-hidden="true"></i> Year </div>
+ <select style="height:38px;" name="eyear" class="input_text">
+ <option value="rnd">Rnd</option>
+ <option value="2018">18</option>
+ <option value="2019">19</option>
+ <option value="2020">20</option>
+ <option value="2021">21</option>
+ <option value="2022">22</option>
+ <option value="2023">23</option>
+ <option value="2024">24</option>
+ <option value="2025">25</option>
+ </select></div>
+
+ <input type="hidden" name="tr" value="1000">
+ <input type="hidden" name="L" style="width: 20px" value="1L"><br /><br />	
+
+
+<a class="Lbutton" name="generar" id="generar"><i class="fa fa-pencil fa-fw" aria-hidden="true"></i> Generate CCs</a><br /><br />
+
+ <center>
+ <div class="eighty"><div><div class="clean" id="cleanText"></div></div>
+
+ <textarea class="textarea" name="output2" id="output2" rows="10" readonly=""></textarea>
+
+ </div></center></form>
+ <footer>
+    <div class="container">
+        <div class="row">
+        <div class="col"></div>
+            <div class="col text-center">
+              <kbd><a class="btn btn-default btn-sm text-muted" href="https://www.facebook.com/user.eddaoudi" target="_blank">Eddaoudi Ayoub</a></kbd><br>
+              All rights reserved &copy;2018<br>
+                <div
+                  class="fb-like"
+                  data-share="true"
+                  data-width="450"
+                  data-show-faces="true">
+                </div>
+            </div>
+            <div class="col"></div>
+        </div>
+    </div>
+ </footer>
+
+</div> 
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
